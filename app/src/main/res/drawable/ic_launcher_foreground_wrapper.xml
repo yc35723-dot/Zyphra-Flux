@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Wrap the foreground image with padding to shrink it into the safe area -->
+    <!-- Increased size: 18dp padding leaves a 72dp core (approx 66% of total, but better fills safe area) -->
+    <item
+        android:drawable="@drawable/ic_launcher_foreground"
+        android:bottom="18dp"
+        android:left="18dp"
+        android:right="18dp"
+        android:top="18dp" />
+</layer-list>

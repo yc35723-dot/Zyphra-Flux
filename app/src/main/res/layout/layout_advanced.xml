@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:paddingBottom="100dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"
+            android:text="進階設定"
+            android:textAppearance="?attr/textAppearanceHeadlineMedium" />
+
+        <!-- Video Storage Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            style="@style/Widget.Material3.CardView.Elevated">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="影片儲存位置"
+                    android:textAppearance="?attr/textAppearanceTitleMedium" />
+                <TextView
+                    android:id="@+id/tvVideoPath"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="目前位置: 預設 (Movies/ZyphraFlux)"
+                    android:textAppearance="?attr/textAppearanceBodySmall" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSelectVideoPath"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="更改位置"
+                    style="@style/Widget.Material3.Button.OutlinedButton" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Video Quality Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="12dp"
+            style="@style/Widget.Material3.CardView.Elevated">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="影片下載畫質"
+                    android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/cgVideoQuality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    app:singleSelection="true"
+                    app:selectionRequired="true">
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip1080p"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1080p (標準)"
+                        android:checkable="true"
+                        style="@style/Widget.Material3.Chip.Filter" />
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip2k"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2K"
+                        android:checkable="true"
+                        style="@style/Widget.Material3.Chip.Filter" />
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip4k"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4K / 最高"
+                        android:checkable="true"
+                        style="@style/Widget.Material3.Chip.Filter" />
+                </com.google.android.material.chip.ChipGroup>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Audio Storage Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="12dp"
+            style="@style/Widget.Material3.CardView.Elevated">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="音檔儲存位置"
+                    android:textAppearance="?attr/textAppearanceTitleMedium" />
+                <TextView
+                    android:id="@+id/tvAudioPath"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="目前位置: 預設 (Music/ZyphraFlux)"
+                    android:textAppearance="?attr/textAppearanceBodySmall" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSelectAudioPath"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="更改位置"
+                    style="@style/Widget.Material3.Button.OutlinedButton" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Audio Quality Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="12dp"
+            style="@style/Widget.Material3.CardView.Elevated">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="音檔下載品質 (Bitrate)"
+                    android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/cgAudioQuality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    app:singleSelection="true"
+                    app:selectionRequired="true">
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip128k"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="128kbps"
+                        android:checkable="true"
+                        style="@style/Widget.Material3.Chip.Filter" />
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip192k"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="192kbps"
+                        android:checkable="true"
+                        style="@style/Widget.Material3.Chip.Filter" />
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip320k"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="320kbps (最高)"
+                        android:checkable="true"
+                        style="@style/Widget.Material3.Chip.Filter" />
+                </com.google.android.material.chip.ChipGroup>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="Zyphra Flux v1.14514"
+            android:textAppearance="?attr/textAppearanceLabelSmall"
+            android:alpha="0.6" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

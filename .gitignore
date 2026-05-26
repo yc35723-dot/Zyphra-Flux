@@ -1,0 +1,43 @@
+# --- Gradle ---
+.gradle/
+build/
+app/build/
+
+# --- Android Studio ---
+*.iml
+.idea/
+.navigation/
+captures/
+.externalNativeBuild/
+.cxx/
+*.swp
+*~
+.DS_Store
+
+# --- 本地設定 (內含 SDK 路徑，絕對不能上傳) ---
+local.properties
+
+# --- 簽署金鑰與證書 (機密文件，絕對不能上傳) ---
+*.jks
+*.keystore
+*.p12
+*.google_play_keys
+
+# --- 編譯產出的成品 ---
+*.apk
+*.aab
+
+# --- 測試與 Log ---
+/screenshots/
+/captures/
+*.log
+
+# --- Bundle 相關 ---
+.bundle/
+
+# --- Kotlin / Java ---
+*.class
+*.kt.swp
+
+# --- yt-dlp / Native Binaries 執行時產生的暫存檔 ---
+# 如果你有手動下載 binary 到 assets/jniLibs 以外的地方，可以在此加入

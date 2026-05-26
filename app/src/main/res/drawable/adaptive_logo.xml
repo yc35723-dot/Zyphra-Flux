@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/logo_dark" android:state_enabled="true">
+        <!-- Default to dark logo, but we use theme-based selection -->
+    </item>
+</selector>
