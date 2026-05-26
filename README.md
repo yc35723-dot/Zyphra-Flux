@@ -65,13 +65,21 @@
 ---
 
 ## 🤝 致謝
-特別感謝以下開源專案提供的強大支援：
-•
-yt-dlp - 世界上最強大的命令行下載工具。
-•
-youtubedl-android - 為 Android 提供的 Python 運行環境封裝。
+**特別感謝以下開源專案提供的強大支援：**
+1. **yt-dlp - 世界上最強大的命令行下載工具。**
+2. **youtubedl-android - 為 Android 提供的 Python 運行環境封裝。**
+
 
 
 ## ⭐ 如果你覺得這個專案有幫助，請給它一個 Star！這對我來說是莫大的鼓勵。
    
-"# Zyphra-Flux" 
+---
+
+## 📥 安裝與建構
+1. **Clone 專案**
+2. **環境要求**
+   - Android Studio Hedgehog (2023.1.1) 以上版本
+   - JDK 17
+   - Android SDK API 24+ (Android 7.0+)
+3.**編譯**
+直接在 Android Studio 中點擊 Sync Project with Gradle Files 並運行。
